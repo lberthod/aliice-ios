@@ -1,0 +1,37 @@
+name: AliiceIOS
+options:
+  bundleIdPrefix: com.berthod
+  deploymentTarget:
+    iOS: "16.0"
+  xcodeVersion: "16"
+
+targets:
+  AliiceIOS:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - path: AliiceIOS
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.berthod.AliiceIOS
+        SWIFT_VERSION: 5.0
+        TARGETED_DEVICE_FAMILY: "1"
+        IPHONEOS_DEPLOYMENT_TARGET: "16.0"
+        INFOPLIST_FILE: AliiceIOS/Info.plist
+        DEVELOPMENT_TEAM: ""
+    info:
+      path: AliiceIOS/Info.plist
+      properties:
+        CFBundleName: Aliice
+        CFBundleDisplayName: Aliice
+        CFBundleShortVersionString: "1.0"
+        CFBundleVersion: "1"
+        UILaunchStoryboardName: LaunchScreen
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UIRequiresFullScreen: true
+        NSSpeechRecognitionUsageDescription: "Used for Thai pronunciation"
+        NSMicrophoneUsageDescription: "Not used"
+        UIBackgroundModes:
+          - audio
