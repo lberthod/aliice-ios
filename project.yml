@@ -25,13 +25,10 @@ targets:
       properties:
         CFBundleName: Aliice
         CFBundleDisplayName: Aliice
-        CFBundleShortVersionString: "1.0"
+        CFBundleShortVersionString: "1.0.0"
         CFBundleVersion: "1"
         UILaunchStoryboardName: LaunchScreen
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
         UIRequiresFullScreen: true
-        NSSpeechRecognitionUsageDescription: "Used for Thai pronunciation"
-        NSMicrophoneUsageDescription: "Not used"
-        UIBackgroundModes:
-          - audio
+        NSPrivacyPolicyURL: "https://loicberthod.ch/aliice/privacy"

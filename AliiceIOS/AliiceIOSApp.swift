@@ -4,6 +4,7 @@ import AVFoundation
 @main
 struct AliiceIOSApp: App {
     @StateObject private var gameState = GameState()
+    @StateObject private var localizationManager = LocalizationManager.shared
 
     init() {
         do {
@@ -22,6 +23,7 @@ struct AliiceIOSApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(gameState)
+                .environmentObject(localizationManager)
         }
     }
 }

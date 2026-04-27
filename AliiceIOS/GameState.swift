@@ -212,9 +212,10 @@ class GameState: ObservableObject {
             streak += 1
             if streak > bestStreak { bestStreak = streak }
             score += 1
+            let prevUnlocked = unlockedCount
             mastery[correctId, default: 0] += 1
 
-            checkCategoryUnlock()
+            checkCategoryUnlock(prevUnlocked: prevUnlocked)
             checkBadges()
             showConfetti = true
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) { self.showConfetti = false }
@@ -243,11 +244,10 @@ class GameState: ObservableObject {
         }
     }
 
-    private func checkCategoryUnlock() {
-        let prevCount = unlockedCount
-        _ = unlockedCount  // recompute
-        if unlockedCount > prevCount {
-            let newCat = LEARNING_PATH[unlockedCount - 1]
+    private func checkCategoryUnlock(prevUnlocked: Int) {
+        let newCount = unlockedCount
+        if newCount > prevUnlocked {
+            let newCat = LEARNING_PATH[newCount - 1]
             catUnlockedPopup = newCat
             DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
                 self.catUnlockedPopup = nil
@@ -275,20 +275,9 @@ class GameState: ObservableObject {
     }
 
     // MARK: - TTS
-    private func configureAudioSession() {
-        do {
-            let session = AVAudioSession.sharedInstance()
-            try session.setCategory(.playback, mode: .spokenAudio, options: .duckOthers)
-            try session.setActive(true)
-        } catch {
-            print("[audio] session config failed: \(error)")
-        }
-    }
-
     func speakThai(_ text: String) {
         guard canSpeak else { return }
 
-        configureAudioSession()
         synthesizer.stopSpeaking(at: .immediate)
 
         // Use phonetically improved Thai text

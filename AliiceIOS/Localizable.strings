@@ -1,0 +1,11 @@
+/*
+  Localizable.strings
+  AliiceIOS (Default - English)
+
+  Ce fichier est un placeholder. Les vraies traductions sont dans:
+  - en.lproj/Localizable.strings (Anglais)
+  - fr.lproj/Localizable.strings (Français)
+*/
+
+// Placeholder - Les traductions réelles sont dans les dossiers .lproj
+"Play" = "Play";
