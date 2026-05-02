@@ -29,9 +29,6 @@
 		8A71E2F002DF08A001716903 /* AliiceIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AliiceIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F1A2566A2B34D9CDE772E10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AA008AEE83D60DD0A745AA9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		E0D22D562F9F53C200F1E281 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = Localizable.strings; sourceTree = "<group>"; };
-		E0D22D592F9F53CD00F1E281 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
-		E0D22D5E2F9F6E4B00F1E281 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
 		E213B9BA5635E212AB8442C1 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		FCF6B180ADC13D34E566D26B /* CategoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryData.swift; sourceTree = "<group>"; };
 		FDBD25CC0E13D0DC234B3AAB /* CategoryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerView.swift; sourceTree = "<group>"; };
@@ -41,39 +38,9 @@
 		3D732768F7F9F58256CA0369 = {
 			isa = PBXGroup;
 			children = (
-				E0D22D5B2F9F53CD00F1E281 /* en.lproj */,
-				E0D22D602F9F6E4B00F1E281 /* en.lproj */,
-				E0D22D582F9F53C200F1E281 /* fr.lproj */,
 				FB980B73F525EBBED2F73580 /* AliiceIOS */,
 				E60EA79E4ACC4E2D403A9DE0 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		E0D22D582F9F53C200F1E281 /* fr.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				E0D22D572F9F53C200F1E281 /* Localizable.strings */,
-			);
-			name = fr.lproj;
-			path = AliiceIOS/fr.lproj;
-			sourceTree = "<group>";
-		};
-		E0D22D5B2F9F53CD00F1E281 /* en.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				E0D22D5A2F9F53CD00F1E281 /* Localizable.strings */,
-			);
-			name = en.lproj;
-			path = AliiceIOS/en.lproj;
-			sourceTree = "<group>";
-		};
-		E0D22D602F9F6E4B00F1E281 /* en.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				E0D22D5F2F9F6E4B00F1E281 /* Localizable.strings */,
-			);
-			name = en.lproj;
-			path = AliiceIOS/en.lproj;
 			sourceTree = "<group>";
 		};
 		E60EA79E4ACC4E2D403A9DE0 /* Products */ = {
@@ -181,33 +148,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		E0D22D572F9F53C200F1E281 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E0D22D562F9F53C200F1E281 /* fr */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		E0D22D5A2F9F53CD00F1E281 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E0D22D592F9F53CD00F1E281 /* en */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		E0D22D5F2F9F6E4B00F1E281 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E0D22D5E2F9F6E4B00F1E281 /* en */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		833F289427AC92394CDC49CB /* Debug */ = {
